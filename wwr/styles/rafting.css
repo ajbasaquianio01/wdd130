@@ -1,12 +1,12 @@
 /* Root Variables for Color Scheme */
 :root {
-    --primary-color: #4B7F52; /* Fern Green for headings */
-    --secondary-color: #C19875; /* Lion for sections */
-    --accent-color: #D2F898; /* Mindaro for accents */
-    --text-color: #ffffff; /* Main text color (dark navy) */
-    --background-color: #90D7FF; /* Pale Azure for background */
-    --footer-bg-color: #4B7F52; /* Footer background (Fern Green) */
-    --footer-text-color: white; /* Footer text color */
+    --primary-color: #4B7F52;
+    --secondary-color: #C19875;
+    --accent-color: #D2F898;
+    --text-color: #ffffff;
+    --background-color: #90D7FF;
+    --footer-bg-color: #4B7F52;
+    --footer-text-color: white;
 }
 
 /* Basic Reset */
@@ -18,120 +18,129 @@
 
 /* Body Styling */
 body {
-    font-family: 'Lato', sans-serif; /* Font family */
-    background-color: var(--background-color); /* Background color */
-    color: var(--text-color); /* Text color */
+    font-family: 'Lato', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
     line-height: 1.6;
-    margin: 0;
-    padding: 0;
     max-width: 1200px;
-    margin: 0 auto; /* Center the entire page */
+    margin: 0 auto;
 }
 
-/* Heading Styles */
-h1, h2 {
-    font-family: 'Lato', sans-serif; /* Font family */
-    color: var(--primary-color); /* Heading color */
-    margin-bottom: 1rem;
+/* Header Styling */
+header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--primary-color);
 }
 
-h1 {
-    font-size: 2.5rem;
-    font-weight: 700; /* Bold style for h1 */
-    text-align: center;
+.logo {
+    width: 80px;
+    height: auto;
 }
 
-h2 {
-    font-size: 2rem;
-    font-weight: 700; /* Bold style for h2 */
-    margin-bottom: 0.5rem;
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
 }
 
-/* Paragraph Styling */
-p {
-    font-weight: 400; /* Regular style for paragraph text */
-    color: var(--text-color); /* Paragraph color */
-    font-size: 1.1rem;
-    margin-bottom: 1.5rem;
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+nav a:hover {
+    text-decoration: underline;
 }
 
 /* Hero Section */
 .hero {
-    position: relative; /* Make the hero container relative */
     text-align: center;
-    padding: 100px 20px; /* Adjust padding as needed */
-    overflow: hidden; /* Ensures no overflow of child elements */
+    padding: 50px 20px;
+    position: relative;
 }
 
 .hero img {
-    display: block; /* Make the image a block element */
-    width: 100%; /* Set the width to 100% of the container */
-    height: auto; /* Maintain aspect ratio of the image */
-}
-
-/* Positioning the Heading and Article */
-.hero h1 {
-    position: absolute; /* Position h1 absolutely */
-    left: 50%; /* Center the heading horizontally */
-    transform: translateX(-50%); /* Adjust for centering */
-    top: 20%; /* Adjust vertical position */
-    font-size: 3rem; /* Size of the hero title */
-    color: white; /* Set text color to white for visibility */
-}
-
-/* Article inside Hero */
-.hero article {
-    position: absolute; /* Position article absolutely */
-    left: 50%; /* Center the article horizontally */
-    transform: translateX(-50%); /* Adjust for centering */
-    top: 40%; /* Adjust vertical position */
-    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background for readability */
-    padding: 20px;
-    border-radius: 10px;
-    color: white; /* Set text color to white for readability */
-}
-
-/* Article Image Styling */
-.hero article img {
-    width: 100px; /* Fixed width for the client image */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 50%; /* Make it circular */
-    margin-left: 10px; /* Margin to separate from paragraph */
-    float: right; /* Float the image to the right */
-}
-
-/* Paragraph Styling */
-.hero article p {
-    margin-bottom: 0; /* Remove bottom margin to tighten spacing */
-    clear: both; /* Clear the float so that it does not overlap */
-}
-
-/* Sections Styling */
-section {
-    padding: 40px 20px;
-    background-color: var(--secondary-color); /* Background color for sections */
-    color: white; /* Text color for sections */
-}
-
-/* Adventure Section Image Styling */
-section img {
     width: 100%;
     height: auto;
-    margin: 10px 0;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: white;
+    margin-top: 20px;
+}
+
+/* History Section */
+.history {
+    background-color: var(--secondary-color);
+    padding: 40px 20px;
+    color: white;
+}
+
+.history-content {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.history-content img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Adventure Section */
+.adventure {
+    padding: 40px 20px;
+    background-color: var(--accent-color);
+    text-align: center;
+}
+
+.adventure-gallery {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+figure {
+    text-align: center;
+    width: 150px;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+figcaption {
+    margin-top: 5px;
+    font-weight: 700;
+    color: var(--primary-color);
 }
 
 /* Footer Styling */
 footer {
-    background-color: var(--footer-bg-color); /* Footer background color */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 20px;
-    text-align: center;
-    color: var(--footer-text-color); /* Footer text color */
+    background-color: var(--footer-bg-color);
+    color: var(--footer-text-color);
 }
 
-/* Social Media Links */
-.sociallinks a {
-    margin: 0 10px;
-    display: inline-block;
+footer p {
+    margin: 0;
+}
+
+.sociallinks {
+    display: flex;
+    gap: 10px;
 }
 
 .sociallinks img {
@@ -143,36 +152,14 @@ footer {
     opacity: 0.8;
 }
 
-/* Remove underline from social media links */
-.sociallinks a {
-    text-decoration: none;
-}
-
-/* Limit the entire page width */
-body {
-    max-width: 1200px;
-    margin: 0 auto; /* Centers the content */
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
-    h1 {
-        font-size: 2rem;
+    .history-content {
+        flex-direction: column;
+        text-align: center;
     }
 
-    h2 {
-        font-size: 1.5rem;
-    }
-
-    .hero {
-        padding: 50px 10px;
-    }
-
-    .hero article {
-        width: 90%;
-    }
-
-    section img {
-        width: 100%;
+    .adventure-gallery {
+        flex-direction: column;
     }
 }
