@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Rafting Company</title>
+    <meta name="description" content="Contact White Water Rafting Company. We’re here to answer your inquiries about rafting adventures, bookings, and more.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Rafting Company Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- Contact Information Section -->
+        <section class="contact-info">
+            <h1>Contact Us</h1>
+            <p>We love questions and feedback – and we're always happy to help! Here are some ways to contact us.</p>
+            <div class="contact-methods">
+                <div>
+                    <h2>Talk to Sales</h2>
+                    <p>Chat with our sales team to discover how our packages can work best for you.</p>
+                    <p>📞 +63-945-865-0801</p>
+                </div>
+                <div>
+                    <h2>Contact Customer Support</h2>
+                    <p>We are waiting to help you and your team – so don’t hesitate to reach out!</p>
+                    <button>Contact Support</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Company Details Section -->
+        <section class="company-details">
+            <h2>Main Branch</h2>
+            <address>
+                Palawan, Philippines<br>
+                X6W2+837, New Reclamation Site, Brgy. 5, Coron, 5316<br>
+                📧 wwr@raftingcompany.com<br>
+                📞 +63-956-555-0108
+            </address>
+            <!-- Embedded Google Map -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2422.9753918437577!2d120.20096066112868!3d11.997731275193654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sph!4v1730378332749!5m2!1sen!2sph" width="600" height="450" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <!-- Team Profiles Section -->
+        <section class="team-profiles">
+            <h2>Meet Our Team</h2>
+            <figure>
+                <img src="images/happyemployees01.jpg" alt="Employee 1">
+                <figcaption>Jane Doe, Sales Manager</figcaption>
+            </figure>
+            <figure>
+                <img src="images/happyemployees02.jpg" alt="Employee 2">
+                <figcaption>John Smith, Customer Support</figcaption>
+            </figure>
+            <!-- Add more employee profiles as needed -->
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="contact-form">
+            <h2>Leave Us a Message</h2>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <fieldset>
+                    <legend>Purpose of Message</legend>
+                    <input type="radio" id="inquiry" name="purpose" value="inquiry" required>
+                    <label for="inquiry">General Inquiry</label>
+
+                    <input type="radio" id="reservation" name="purpose" value="reservation">
+                    <label for="reservation">Reservation Question</label>
+
+                    <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                    <label for="suggestion">Website Suggestion</label>
+                </fieldset>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <label>
+                    <input type="checkbox" name="newsletter"> Please subscribe me to the monthly newsletter
+                </label>
+
+                <button type="submit">Submit Message</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 White Water Rafting</p>
+        <nav class="sociallinks">
+            <a href="https://facebook.com"><img src="images/facebook.svg" alt="Facebook"></a>
+            <a href="https://twitter.com"><img src="images/twitter.svg" alt="Twitter"></a>
+            <a href="https://instagram.com"><img src="images/instagram.svg" alt="Instagram"></a>
+        </nav>
+        <a href="https://app.moqups.com/lHoaKL2yk7gFiXJeyRffjiZmVYPGIqoj/view/page/ad12de680">View Contact Us Wireframe</a>
+    </footer>
+</body>
+</html>
