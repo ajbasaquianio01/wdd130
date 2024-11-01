@@ -61,6 +61,8 @@ nav a:hover {
     text-align: center;
     padding: 50px 20px;
     position: relative;
+    background-color: var(--primary-color); /* Added background color */
+    color: var(--text-color);
 }
 
 .hero img {
@@ -74,61 +76,11 @@ nav a:hover {
     margin-top: 20px;
 }
 
-/* History Section */
-.history {
-    background-color: var(--secondary-color);
-    padding: 40px 20px;
-    color: white;
-}
-
-.history-content {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-}
-
-.history-content img {
-    width: 150px;
-    height: auto;
-    border-radius: 10px;
-}
-
-/* Adventure Section */
-.adventure {
-    padding: 40px 20px;
-    background-color: var(--accent-color);
-    text-align: center;
-}
-
-.adventure-gallery {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-figure {
-    text-align: center;
-    width: 150px;
-}
-
-figure img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-figcaption {
-    margin-top: 5px;
-    font-weight: 700;
-    color: var(--primary-color);
-}
-
 /* Trips Section */
 .trips-section {
     text-align: center;
     padding: 50px;
-    background-color: var(--background-color);
+    background-color: var(--background-color); /* Ensures matching background */
     color: var(--primary-color);
 }
 
@@ -144,6 +96,7 @@ figcaption {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: var(--primary-color); /* Ensure text color matches */
 }
 
 .trip-card img {
@@ -156,7 +109,7 @@ figcaption {
 /* Trip Table */
 .trip-table {
     padding: 50px;
-    background-color: var(--accent-color);
+    background-color: var(--accent-color); /* Matches about.html styling */
     text-align: center;
 }
 
