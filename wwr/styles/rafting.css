@@ -124,6 +124,78 @@ figcaption {
     color: var(--primary-color);
 }
 
+/* Trips Section */
+.trips-section {
+    text-align: center;
+    padding: 50px;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+}
+
+.trips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.trip-card {
+    background-color: white;
+    border: 1px solid var(--secondary-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.trip-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+/* Trip Table */
+.trip-table {
+    padding: 50px;
+    background-color: var(--accent-color);
+    text-align: center;
+}
+
+.trip-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    background-color: white;
+}
+
+.trip-table th, .trip-table td {
+    padding: 15px;
+    border: 1px solid var(--secondary-color);
+    color: var(--primary-color);
+}
+
+/* Call to Action */
+.cta {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.cta .btn {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.cta .btn:hover {
+    background-color: var(--background-color);
+}
+
 /* Footer Styling */
 footer {
     display: flex;
@@ -161,5 +233,9 @@ footer p {
 
     .adventure-gallery {
         flex-direction: column;
+    }
+    
+    .trips-grid {
+        grid-template-columns: 1fr;
     }
 }
